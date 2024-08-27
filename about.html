@@ -10,8 +10,12 @@
         header {
             background-color: #454545;
             font-family: 'Times New Roman', Times, serif;
-            height: 75px;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            position: relative;
             padding: 30px;
+            justify-content: center;
         }
 
         main {
@@ -19,6 +23,8 @@
             font-family: 'Times New Roman', Times, serif;
             font-size: medium;
             height: 500px;
+            display: flex;
+            align-items: left;
             padding: 30px;
         }
 
@@ -26,24 +32,7 @@
             background-color: #454545;
             font-family: 'Times New Roman', Times, serif;
             height: 100px;
-            display: block;
-        }
-
-        .wrapper {
             display: flex;
-        }
-        
-        .left {
-
-        }
-
-        .right {
-            margin-left: auto;
-            text-align: right;
-        }
-
-        .nav {
-
         }
 
         .icons {
@@ -53,25 +42,20 @@
     </style>
 </head>
 <body>
+    <style class=""></style>
     <header>
-        <div class="wrapper">
-            <div class="left"><h1>Zachery Davis</h1></div>
-            <div class="right">
-                <div class="wrapper">
-                    <nav>
-                        <a href="index.html" style="color">Home</a>
-                        <a href="about.html">About</a>
-                        <a href="projects.html">Projects</a>
-                    </nav>
-                </div>
-            </div>
-        </div>        
+        <div class="header">
+            <h1>About Me</h1>
+            <h2>Computer Science Major With Concentration In Software Engineering</h2>    
+        </div>
     </header>
 
     <main>
         <div class="main">
             <nav>
-                
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
             </nav>
         </div>
     </main>
