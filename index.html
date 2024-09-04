@@ -1,94 +1,45 @@
 <!DOCTYPE html>
-<html lang="en" style="color: #ffffff;" >
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Zachery Davis">
     <link rel="icon" href="./images/icon.png">
+    <link rel="stylesheet" href="stylesheet.css">
     <title>Zachery Davis' Website</title>  
-    <style>
-        header {
-            background-color: #454545;
-            font-family: 'Times New Roman', Times, serif;
-            height: 75px;
-            padding: 30px;
-        }
-
-        main {
-            background-color: #817a7a;
-            font-family: 'Times New Roman', Times, serif;
-            font-size: medium;
-            height: 500px;
-            padding: 30px;
-        }
-
-        footer {
-            background-color: #454545;
-            font-family: 'Times New Roman', Times, serif;
-            height: 100px;
-            display: block;
-        }
-
-        .wrapper {
-            display: flex;
-        }
-        
-        .left {
-
-        }
-
-        .right {
-            margin-left: auto;
-            text-align: right;
-        }
-
-        .nav {
-            color: #ffffff; 
-            font-size: xx-large;
-        }
-
-        .icons {
-            justify-content: center;
-            padding: 10px;
-        }
-    </style>
 </head>
 <body>
     <header>
         <div class="wrapper">
-            <div class="nav">Zachery Davis</div>
-            <div class="right">
-                <div class="wrapper">
-                    <nav>
-                        <a href="index.html" class="nav">Home</a>
-                        <a href="about.html" class="nav">About</a>
-                        <a href="projects.html" class="nav">Projects</a>
-                    </nav>
-                </div>
-            </div>
-        </div>        
+            <h1>Zachery Davis</h1>
+            <ul class="right">
+                <a href="index.html" class="nav"><button type="button">Home</button></a>
+                <a href="about.html" class="nav"><button type="button">About</button></a>
+                <a href="projects.html" class="nav"><button type="button">Projects</button></a>
+            </ul>
+        </div>
+        <br>        
     </header>
 
     <main>
-        <div class="main">
-            <nav>
-                
-            </nav>
+        <div>
+            
         </div>
     </main>
 
     <footer>
-        <div class="footer">
-            <div class="icons">
-                <a href="https://www.linkedin.com/in/zachery-david-davis/" target="_blank">
-                    <img src="images/LinkedinIcon.png" alt="Linkedin" width="25" height="25">
-                </a>
-                <a href="https://github.com/Zachery-Davis" target="_blank">
-                    <img src="images/github.png" alt="Linkedin" width="25" height="25">
-                </a>
-            </div>
-            <p style="font-size: small;">Developed by Zachery Davis | Aug. 2024</p>
+        <div class="icons">
+            <a class="icon" href="https://www.linkedin.com/in/zachery-david-davis" target="_blank" rel="noreferrer">
+                <img src="images/linkedin.svg" alt="Linkedin" width="25" height="25">
+            </a>
+            <a class="icon" href="https://github.com/Zachery-Davis" target="_blank" rel="noreferrer">
+                <img src="images/github.svg" alt="GitHub" width="25" height="25">
+            </a>
+            <a class="icon" href="mailto:zacherydavis@hotmail.com" target="_blank" rel="noreferrer">
+                <img src="images/email.svg" alt="Email" width="25" height="25" >
+            </a>
         </div>
+        <p class="dev">Developed by Zachery Davis | Aug. 2024</p>
     </footer>
 </body>
 </html>

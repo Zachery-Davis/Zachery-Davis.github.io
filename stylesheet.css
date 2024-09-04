@@ -1,0 +1,97 @@
+:root {
+    background-color: #454545;
+
+    --primary-background: #817a7a;
+    --secondary-background: #454545;
+    --white: #ffffff;
+}
+
+body {
+    color: var(--white);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    background-color: var(--secondary-background);
+    height: auto;
+    font-size: xx-large;
+    text-align: center;
+}
+
+main {
+    background-color: var(--primary-background);
+    font-size: medium;
+    height: 70vh;
+    padding: 30px;
+}
+
+footer {
+    background-color: var(--secondary-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 10px;
+}
+
+h1 {
+    color: var(--white);
+    font-size: xx-large;
+    font-weight: 500;
+}
+
+a[href] {
+    color: var(--white); 
+    text-decoration: none;
+}
+
+button {
+    border-color: var(--white);
+    color: var(--white);
+    background-color: black;
+    background: local;
+    font-size: xx-large;
+    transition: transformation 0.2s ease-in-out;
+}
+
+button:hover {
+    filter: invert();
+    background: fixed;
+    transform: scale(1.1);
+}
+
+.dev {
+    font-size: small;
+    padding: 5px;
+}
+
+.icons {
+    display: flex;
+    padding: 10px;
+}
+
+.icon {
+    padding: 10px;
+    filter:invert();
+    transition: transformation 0.3s ease-in-out;
+}
+
+.icon:hover {
+    transform: scale(1.3);
+    padding: 10px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    padding: 10px;
+}
+
+.right {
+    margin-left: auto;
+    text-align: right;
+}
+
+
