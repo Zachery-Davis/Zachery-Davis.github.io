@@ -30,6 +30,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: auto;
     padding: 10px;
 }
@@ -40,6 +41,12 @@ h1 {
     font-weight: 500;
 }
 
+h2 {
+    color: var(--white);
+    font-size: x-large;
+    font-weight: 400;
+}
+
 a[href] {
     color: var(--white); 
     text-decoration: none;
@@ -48,26 +55,35 @@ a[href] {
 button {
     border-color: var(--white);
     color: var(--white);
-    background-color: black;
-    background: local;
-    font-size: xx-large;
+    background: none;  
     transition: transformation 0.2s ease-in-out;
 }
 
 button:hover {
     filter: invert();
-    background: fixed;
+    background-color: rgb(0, 0, 0);
     transform: scale(1.1);
+}
+
+button.nav {
+    font-size: xx-large;
+}
+
+section {
+    border-color: var(--secondary-background);
+}
+
+.hidden {
+    display: none;
 }
 
 .dev {
     font-size: small;
-    padding: 5px;
 }
 
 .icons {
     display: flex;
-    padding: 10px;
+    padding: 5px;
 }
 
 .icon {

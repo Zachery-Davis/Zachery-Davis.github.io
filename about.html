@@ -13,18 +13,36 @@
         <div class="wrapper">
             <h1>About Me</h1>
             <ul class="right">
-                <a href="index.html" class="nav"><button type="button">Home</button></a>
-                <a href="about.html" class="nav"><button type="button">About</button></a>
-                <a href="projects.html" class="nav"><button type="button">Projects</button></a>
+                <a href="index.html" class="nav"><button type="button" class="nav">Home</button></a>
+                <a href="about.html" class="nav"><button type="button" class="nav">About</button></a>
+                <a href="projects.html" class="nav"><button type="button" class="nav">Projects</button></a>
             </ul>
         </div>
         <br>        
     </header>
 
     <main>
-        <div>
-            
-        </div>
+        <p>
+            My name is Zachery Davis and I am a student at the University of North Carolina at Charlotte.
+        </p>
+        <button type="button" id="button-reveal">View Resume</button>
+        <script>
+            document.getElementById('button-reveal').addEventListener('click', function() {
+                var content = document.getElementById('hidden-resume');
+                var button = document.getElementById('button-reveal');
+    
+                if (content.style.display === 'none' || content.style.display === '') {
+                    content.style.display = 'block';
+                    button.textContent = 'Hide Resume';
+                } else {
+                    content.style.display = 'none';
+                    button.textContent = 'Show Resume';
+                }
+            });
+        </script>
+        <section class="hidden" id="hidden-resume">
+            <div class="wrapper"><h2>Education</h2></div>
+        </section>
     </main>
 
     <footer>
