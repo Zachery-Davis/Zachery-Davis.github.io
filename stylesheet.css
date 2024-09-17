@@ -47,9 +47,18 @@ h2 {
     font-weight: 400;
 }
 
+p {
+    font-size: 22px;
+    margin: 5px;
+}
+
 a[href] {
     color: var(--white); 
     text-decoration: none;
+}
+
+a[href]:hover {
+    text-decoration: underline;
 }
 
 button {
@@ -62,7 +71,6 @@ button {
 button:hover {
     filter: invert();
     background-color: rgb(0, 0, 0);
-    transform: scale(1.1);
 }
 
 button.nav {
@@ -79,6 +87,29 @@ section {
 
 .dev {
     font-size: small;
+}
+
+.scroll-container {
+    width: 50%;
+    height: 60vh;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-background);
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin: 10px;
 }
 
 .icons {
@@ -102,7 +133,7 @@ section {
     justify-content: center;
     align-items: center;
     height: 5vh;
-    padding: 10px;
+    padding: 20px 20px 0px 20px;
 }
 
 .right {
